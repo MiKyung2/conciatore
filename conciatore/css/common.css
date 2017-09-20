@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/* 태그초기화 */
+body, section, span, div, header, hr, h1, h2, h3, h4, h5, h6, nav, ul, li, img, p, a,dl,dd,dt{margin:0;padding:0;border:none;text-decoration:none}
+body{overflow-x:hidden}
+video > img{max-width:100%;height:auto}
+section#content{margin-top:85px}
+a{color:#333}
+ul, li{list-style:none}
+.p_a {position:absolute}
+.p_r {position:relative}
+.f_l{float:left}
+.f_r{float:right}
+.center{text-align:center}
+.clear:after{content:"";display:block;clear:both}
+.hid{visibility:hidden;float:left;text-indent:-9999px;font-size:0;opacity:0;filter:Alpha(opacity=0)}
+.line{width:300px;height:2px;background:#fff;margin:30px auto}
+
+/* 본문 바로가기 스타일*/
+#i_skip a{position:absolute;top:0px;left:-9999px; z-index:999}
+#i_skip a:focus, #skip a:active{left:0px;width:100%;background:black;color:white;font-weight:700;text-align:center;padding:10px 0}
+
+h1, h2, h3, h4, h5, h6{font-family: 'Montserrat', 'Nanum Gothic', sans-serif;}
+p, a, dl, dt, dd, li, span, button{font-family: 'Montserrat', 'Nanum Gothic', sans-serif;}
+/*ie8 호환*/
+header, footer, section, video{display:block;}
+
+/* 상단 헤더 */
+header{width:100%; height:85px;background:rgba(255,255,255,0.9);z-index:100;box-shadow:1px 1px 10px gray;}
+header nav#gnb{width:70%;min-width:1000px;margin:0 auto;position:relative}
+nav#gnb h1{padding:25px 0}
+nav#gnb li{float:left;padding:30px 0}
+nav#gnb #menu{position:absolute;width:500px;left:50%;margin-left:-225px}
+nav#gnb #mymenu li{margin-right:0.75em;font-size:0.6em}
+nav#gnb #menu li{margin:0 1em}
+nav#gnb #logo img{width:auto}
+nav#gnb input{background:none;border:none;width:0;transition:all 2s}
+nav#gnb input.on{border-bottom:1px solid #333;width:100px}
+    
+             
+/* 푸터 영역 */
+#i_footer {float:left;position:relative;width:100%;height:200px;background-color:black;color:white}
+#i_footer ul{position:absolute; list-style:none; top:80px;left:50%;width:500px;margin-left:-200px}
+#i_footer ul li{float:left; margin:0 1em}
+#i_footer a{color:white;text-decoration:none}
+#i_footer address{font-style:normal; text-align:center; padding-top:150px}
+
+/* 맵 영역 */
+#map {width:100%;height:300px}
+#map h1{font-size:15px}
+#map #content{background:pink}
